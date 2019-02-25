@@ -2,7 +2,7 @@
 	let aud = document.querySelector('audio'),
 		play = document.querySelector("#playButton"),
 		pause = document.querySelector("#pauseButton"),
-		rewind= document.querySelector("#rewindButton"),
+		rewind = document.querySelector("#rewindButton"),
 		tracks = document.querySelectorAll('.trackholder');
 
 	function playAudio() {
@@ -14,13 +14,13 @@
 	}
 
 	function rewindAudio() {
-		aud.currentTime = 0,
+		aud.currentTime = 0;
 		
 		playAudio();
 	}
 
 	function switchAudioTrack() {
-		currentTrack = this.dataset.currentTrack;
+		currentTrack = this.dataset.currenttrack;
 
 		aud.src = `audio/${currentTrack}`;
 		aud.load();
